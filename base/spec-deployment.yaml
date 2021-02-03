@@ -17,6 +17,9 @@ spec:
         - name: ghost
           imagePullPolicy: IfNotPresent
           image: ghost:3.41.3-alpine
+          env:
+            - name: url
+              value: 'https://ghost.larsnieuwenhuizen.nl'
           ports:
             - containerPort: 2368
               name: ghost
