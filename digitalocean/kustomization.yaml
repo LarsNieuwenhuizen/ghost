@@ -1,0 +1,12 @@
+---
+namespace: ghost
+
+bases:
+  - ./../base
+
+patchesJson6902:
+  - target:
+      kind: PersistentVolumeClaim
+      name: ghost-pvc
+      version: v1
+    path: patch-pvc.yaml
