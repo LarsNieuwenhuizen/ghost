@@ -31,4 +31,4 @@ spec:
         - name: ghost
           port: 80
   tls:
-    secretName: tls
+    secretName: developersvision
