@@ -31,4 +31,4 @@ spec:
         - name: ghost
           port: 80
   tls:
-    certResolver: le
+    secretName: tls
