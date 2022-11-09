@@ -14,6 +14,15 @@ spec:
       labels:
         app: ghost
     spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: kubernetes.io/hostname
+                    operator: In
+                    values:
+                      - worker-pool-75d2w
       containers:
         - name: ghost
           imagePullPolicy: IfNotPresent
