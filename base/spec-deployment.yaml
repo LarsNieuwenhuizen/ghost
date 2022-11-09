@@ -5,6 +5,7 @@ metadata:
   name: ghost
 spec:
   replicas: 1
+  revisionHistoryLimit: 2
   selector:
     matchLabels:
       app: ghost
@@ -16,7 +17,7 @@ spec:
       containers:
         - name: ghost
           imagePullPolicy: IfNotPresent
-          image: ghost:4.48.7-alpine
+          image: ghost:5.22.9-alpine
           env:
             - name: url
               valueFrom:
