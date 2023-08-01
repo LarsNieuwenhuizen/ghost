@@ -22,7 +22,7 @@ spec:
                   - key: kubernetes.io/hostname
                     operator: In
                     values:
-                      - worker-pool-qdn86
+                      - worker-pool-y8fwo
       containers:
         - name: ghost
           imagePullPolicy: IfNotPresent
